@@ -1,0 +1,18 @@
+{
+  "name": "chemviz",
+  "version": "1.0.0",
+  "description": "Aplicacion web para visualizacion de moleculas quimicas con modelos 2D y 3D interactivos",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm --prefix server install && npm --prefix client install",
+    "start": "concurrently -n server,client -c blue,green \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client run dev",
+    "test": "npm --prefix server test",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "concurrently": "^8.2.2"
+  }
+}

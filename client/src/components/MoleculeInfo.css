@@ -1,0 +1,140 @@
+/* ===== Molecule Info ===== */
+.molecule-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-md);
+}
+
+.molecule-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 2px;
+}
+
+.molecule-iupac {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--color-primary-lighter);
+  color: var(--color-primary);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.badge-iupac {
+  background: #fff3cd;
+  color: #856404;
+  font-family: var(--font-sans, sans-serif);
+}
+
+.molecule-props {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.prop-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.prop-label {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.prop-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.prop-value.formula {
+  font-size: 1.15rem;
+}
+
+.prop-value.mono {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  word-break: break-all;
+}
+
+/* Interactividad y Descripción */
+.molecule-description {
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-background);
+  border-left: 3px solid var(--color-primary-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--color-text-secondary);
+}
+
+.info-value-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  opacity: 0.5;
+  transition: opacity 0.2s, transform 0.1s;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+  background: var(--color-background);
+  transform: scale(1.1);
+}
+
+.smiles-item { flex: 1 1 100%; }
+
+.smiles-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.copy-btn {
+  flex-shrink: 0;
+  background: var(--color-primary-lighter);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.copy-btn:hover {
+  background: var(--color-primary-light);
+  transform: none;
+}
+
